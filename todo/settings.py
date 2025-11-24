@@ -126,8 +126,4 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-<<<<<<< HEAD
-VERSION = '1.0.6'
-=======
-VERSION = '1.0.5'
->>>>>>> 1d841f9830aaabfc9455ab5a8c8c2f1f19f75c88
+VERSION = '1.0.7'
