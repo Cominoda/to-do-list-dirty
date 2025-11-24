@@ -28,6 +28,11 @@ if git tag --list "$VERSION" | grep -q .; then
   exit 1
 fi
 
+if ! pipenv run ruff check .; then
+  echo "Erreur: Ruff a détecté des problèmes de style ou de syntaxe." >&2
+  exit 1
+fi
+
 # Met à jour la variable VERSION dans settings.py
 python3 - <<PY
 from pathlib import Path
