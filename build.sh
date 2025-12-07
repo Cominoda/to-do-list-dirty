@@ -50,7 +50,7 @@ fi
 # . : motif spécial en expressions régulières qui correspond à n'importe quel caractère
 if git tag --list "$NUM_VERSION" | grep -q . ; then
   echo "Le tag '$NUM_VERSION' existe déjà" >&2
-  #exit 1
+  exit 1
 fi
 
 # - : Indique que le script Python sera lu depuis l'entrée standard (stdin) plutôt que depuis un fichier.
@@ -70,12 +70,11 @@ if count == 0:
 path.write_text(new_text)
 SCRIPT_PY
 
-git add .
-git commit -m "Bump version to $NUM_VERSION"
-git tag -a "$NUM_VERSION" -m "Version $NUM_VERSION"
+#git add .
+##git commit -m "Bump version to $NUM_VERSION"
+git tag "$NUM_VERSION"
 
 #archivage
-ARCHIVE_NAME="todolist-$NUM_VERSION.zip"
-git archive --format=zip --output "$ARCHIVE_NAME" HEAD
+git archive --format=zip --output=todolist-$NUM_VERSION.zip HEAD
 
 echo "Mise à jour de la version dans $NUM_VERSION..."
