@@ -46,6 +46,8 @@ if [ ! -f "$SETTINGS_PATH" ]; then
   exit 1
 fi
 
+pipenv run ruff check .
+
 #-q (quiet) : supprime la sortie standard, ne renvoie que le code de retour
 # . : motif spécial en expressions régulières qui correspond à n'importe quel caractère
 if git tag --list "$NUM_VERSION" | grep -q . ; then

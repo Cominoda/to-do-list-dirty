@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
-from .models import *
-from .forms import *
+#from django.http import HttpResponse
+from .models import Task
+from .forms import TaskForm
 from django.conf import settings
 # Create your views here.
 def index(request):
