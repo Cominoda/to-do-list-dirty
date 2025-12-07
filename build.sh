@@ -75,6 +75,7 @@ SCRIPT_PY
 git tag "$NUM_VERSION"
 
 #archivage
-git archive --format=zip --output=todolist-$NUM_VERSION.zip HEAD
+ARCHIVE_NAME="todolist-$NUM_VERSION.zip"
+git archive --format=zip --output "$ARCHIVE_NAME" HEAD
 
 echo "Mise à jour de la version dans $NUM_VERSION..."

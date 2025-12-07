@@ -11,23 +11,23 @@ Spécification [Conventional Commits](https://www.conventionalcommits.org/en/v1.
 
 ### Format
 
-    [type] [scope]: [description]
+    [type] [scope (optionnel)]: [description]
 
 ### Types utilisés 
 
-- feat : nouvelle fonctionnalité
-- fix : correction de bug
-- docs : documentation
-- refactor : amélioration interne
-- test : ajout/mise à jour de tests
-- chore : maintenance, dépendances, scripts
+- `feat` : nouvelle fonctionnalité
+- `fix` : correction de bug
+- `docs` : documentation
+- `refactor` : amélioration interne
+- `test` : ajout/mise à jour de tests
+- `chore` : maintenance, dépendances, scripts
 
 ### Exemples
 
     feat(todo): ajouter la création de tâches
     fix(ui): corriger l'affichage mobile
     docs: mettre à jour le README avec les nouvelles instructions
-    
+
 ---
 
 ## Gestion Sémantique des Versions (SemVer)
