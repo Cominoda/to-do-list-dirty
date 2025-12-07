@@ -1,0 +1,12 @@
+[run]
+
+#source=*/tests/
+
+# Liste des fichiers/dossiers à exclure
+omit =
+    */manage.py
+    */settings.py
+    */migrations/*
+    */admin.py
+    */urls.py
+    */__init__.py
