@@ -5,6 +5,11 @@ name = "pypi"
 
 [packages]
 django = "*"
+ruff = "*"
+pyyaml = "*"
+selenium = "*"
+fpdf = "*"
+webdriver-manager = "*"
 
 [dev-packages]
 ruff = "*"

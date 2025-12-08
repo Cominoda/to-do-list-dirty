@@ -1,9 +1,10 @@
 [run]
 
-#source=*/tests/
+source=tasks
 
 # Liste des fichiers/dossiers à exclure
 omit =
+    */test_runner.py
     */manage.py
     */settings.py
     */migrations/*
